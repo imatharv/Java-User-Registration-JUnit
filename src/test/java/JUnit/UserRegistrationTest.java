@@ -16,7 +16,7 @@ public class UserRegistrationTest {
 	public void testfirstName_shouldReturnFalse() {
 		String firstName = "athArva";
 		boolean isValidFirstName = UserRegistration.isValidFirstName(firstName);
-		assertTrue(isValidFirstName);
+		assertFalse(isValidFirstName);
 	}
 
 	//positive test to check last name
@@ -32,7 +32,7 @@ public class UserRegistrationTest {
 	public void testlastName_shouldReturnFalse() {
 		String lastName = "JoShi";
 		boolean isValidLastName = UserRegistration.isValidLastName(lastName);
-		assertTrue(isValidLastName);
+		assertFalse(isValidLastName);
 	}
 	
 	//positive test to check last name
@@ -48,7 +48,7 @@ public class UserRegistrationTest {
 	public void testmobileNumber_shouldReturnFalse() {
 		String mobileno = "9665654666";
 		boolean isValidMobileNo = UserRegistration.isValidMobileNo(mobileno);
-		assertTrue(isValidMobileNo);
+		assertFalse(isValidMobileNo);
 	}
 	
 	//positive test to check email id
@@ -64,7 +64,7 @@ public class UserRegistrationTest {
 	public void testemail_shouldReturnFalse() {
 		String email = "#joshi#@carrier@gmail.com";
 		boolean isValidEmailId = UserRegistration.isValidEmailId(email);
-		assertTrue(isValidEmailId);
+		assertFalse(isValidEmailId);
 	}
 	
 	//positive test to check password
@@ -80,6 +80,6 @@ public class UserRegistrationTest {
 	public void testpassword_shouldReturnFlase() {
 		String password = "Jc2021";
 		boolean isValidPassword = UserRegistration.isValidPassword(password);
-		assertTrue(isValidPassword);
+		assertFalse(isValidPassword);
 	}	
 }
